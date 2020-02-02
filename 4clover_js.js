@@ -37,9 +37,9 @@ var nextBtn = document.getElementById('nextBtn')
 
 	
 ///////////////////////album 簡介//////////////////////////////
-document.getElementById('album').onmouseover = function(){
-	getElementById('albumInfo').style.visibility = "visible"
-}
+// document.getElementById('album').onmouseover = function(){
+// 	getElementById('albumInfo').style.visibility = "visible"
+// }
 ///////////////////info 按鈕///////////////////////////////////////// 
  var infoBtn=document.getElementById('infoBtn')
  var infoColumn = document.getElementById('leftColumn')
