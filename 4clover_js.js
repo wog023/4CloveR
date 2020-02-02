@@ -33,24 +33,30 @@ var nextBtn = document.getElementById('nextBtn')
 	nextBtn.onmouseout = function (event){
 		this.src = "images/next_icon.png"
 	}
-////////////////////////play 按鈕//////////////////////////
-// var playBtn = document.getElementById('playBtn')
-// document.getElementById('playNow').onpause = function(){
-// 	playBtn.onmouseover = function (){
-// 		this.src = "images/play_icon_bright.png"
-// 	}
-// 	playBtn.onmouseout = function (){
-// 		this.src = "images/play_icon.png"
-// 	}
-// }
+
+
 	
 ///////////////////////album 簡介//////////////////////////////
 document.getElementById('album').onmouseover = function(){
 	getElementById('albumInfo').style.visibility = "visible"
 }
-//////////////////////////////////////////////////////////// 
-
-
+///////////////////info 按鈕///////////////////////////////////////// 
+ var infoBtn=document.getElementById('infoBtn')
+ var infoColumn = document.getElementById('leftColumn')
+ 
+ 	// console.log('123')
+ 	
+ 		if(window.innerWidth>900){
+ 			infoColumn.style.display='block'
+ 		}else{
+ 			infoBtn.onclick= function(){
+ 				if(infoColumn.style.display==='none'){
+ 					infoColumn.style.display='block'
+ 				}else{
+ 					infoColumn.style.display='none'
+ 				}
+ 			}
+ 		}
 
 
 

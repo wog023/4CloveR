@@ -21,11 +21,13 @@ function B1(i){			//播放
 	document.getElementById('songNow').play() 
 }
 function B2(i){			//改顏色
-	a1[i].style.backgroundColor = "rgba(100, 211, 120,0.25)"
+	// a1[i].style.backgroundColor = "rgba(100, 211, 120,0.25)"
+	a1[i].style.background = 
+	"linear-gradient(55deg,rgba(100, 213, 120,0.1),rgba(100, 220, 120,0.4))"
 }
 function B3(){			//顏色回復
 	for (var n = 0; n < 11; n++) {
-		document.getElementsByTagName('li')[n].style.backgroundColor = "#101410"
+		document.getElementsByTagName('li')[n].style.background = "#101410"
 	} 
 }
 function B4(i){				
@@ -55,7 +57,7 @@ function C1(i){
 	}
 }
 
-for (var i=1;i<10;i++) {	//執行全部
+for (var i=1;i<=10;i++) {	//執行全部
 	C1(i)
 }
 
@@ -68,7 +70,7 @@ document.getElementById('songNow').volume =0.3	//開場音量
 var songNow = document.getElementById('songNow')
 var playBtn = document.getElementById('playBtn')
 
-
+var abc = songNow.onpause
 
 
 songNow.onpause = function(){	//暫停時可播
@@ -76,17 +78,19 @@ songNow.onpause = function(){	//暫停時可播
 	playBtn.onclick = function(){
 		songNow.play()
 	}
-	// playBtn.onmouseover = function (){
+
+	
+}
+	// playBtn.onmouseover = function (abc){
 	// 	playBtn.src = "images/play_icon_bright.png"
 	// }
-	// playBtn.onmouseout = function (){
+	// playBtn.onmouseout = function (abc){
 	// 	playBtn.src = "images/play_icon.png"
 	// }
 
-	
-	
-	
-}
+
+
+
 songNow.onplay = function(){	//播放時可暫停
 	playBtn.src = "images/pause_icon.png"
 	playBtn.onclick = function(){
