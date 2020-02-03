@@ -59,10 +59,11 @@ var nextBtn = document.getElementById('nextBtn')
  				}
  			}
  		}
- 		// document.getElementById('leftColumn').onwheel = function(){
- 		// 	console.log('123')
- 		// }
+//////////////////////彈出介紹/////////////////////////////////
 
+document.getElementById('close').onclick = function(){
+	document.getElementById('intro').style.display = 'none'
+}
 
 
 

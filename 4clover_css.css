@@ -134,6 +134,15 @@ header{
 #info p{
 	display: inline;
 }
+#rights{
+	font-family: Microsoft JhengHei;
+	font-size: 12px;
+	display: block;
+	position: relative;
+	top: 130px;
+	margin: auto auto auto auto;
+}
+
 #content{
 	/*float: left;*/
 	margin-left: 30%;
@@ -244,8 +253,55 @@ header{
 	width: 40px;
 }
 
-
-/************************************************************/
+/******************彈出介紹**************************/
+#intro{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	/*opacity: 0.2;*/
+	display: none;
+	z-index: 3;
+}
+#intro2{
+	width: 80%;
+	/*height: 63%;*/
+	background-color: black;
+	position: fixed;
+	top: 100px;
+	left: 10%;
+	z-index: 4;
+	border-radius: 5px;
+	border: 1px solid #A8A5A7;
+}
+#close {
+  color: rgb(24,180,117);
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 20px auto auto;
+}
+#close:hover,
+#close:focus {
+  color: rgb(24,180,117);
+  text-decoration: none;
+  cursor: pointer;
+}
+#intro2 p{
+	display: block;
+	width: 78%;
+	color: white;
+	font-size: 18px;
+	margin: 45px auto 40px auto;
+	line-height: 38px;
+	font-family: Microsoft JhengHei;
+}
+#intro2 p span{
+	color: rgb(24,180,117);
+}
+/***********************響應*************************************/
 @media screen and (max-width: 900px) {
 	#leftColumn{
 		display: none;
@@ -285,4 +341,9 @@ header{
 	#songList li:nth-child(1){
 		color: gray;
 	}
+	#intro{
+		display: block;
+	}
 }
+
+
