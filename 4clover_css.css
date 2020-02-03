@@ -93,12 +93,13 @@ header{
 }
 #name h1{
 	/*opacity: 0.8;*/
-
+	color: white;
 }
 
 /********************************************/
 #name a:link{
 	text-decoration: none;
+	color: white;
 }
 #name a:visited{
 	color: white;
@@ -106,7 +107,7 @@ header{
 #name a:hover{
 	text-decoration:underline rgba(24,180,117,0.8);
 	/*border-bottom: 2px solid rgba(24,180,117,0.8);*/
-
+	color: white;
 }
 #name a:avtive{
 
