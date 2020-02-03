@@ -279,7 +279,10 @@ header{
 		display: block;
 		filter: brightness(0.8);
 	}
-	#infoBtn:hover{
+	/*#infoBtn:hover{
 		filter: brightness(1);
+	}*/
+	#songList li:nth-child(1){
+		color: gray;
 	}
 }

@@ -52,11 +52,16 @@ var nextBtn = document.getElementById('nextBtn')
  			infoBtn.onclick= function(){
  				if(infoColumn.style.display==='none'){
  					infoColumn.style.display='block'
+ 					infoBtn.style.filter = 'brightness(1)'
  				}else{
  					infoColumn.style.display='none'
+ 					infoBtn.style.filter = 'brightness(0.8)'
  				}
  			}
  		}
+ 		// document.getElementById('leftColumn').onwheel = function(){
+ 		// 	console.log('123')
+ 		// }
 
 
 
