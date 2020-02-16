@@ -277,6 +277,11 @@ header{
 	border-radius: 5px;
 	border: 1px solid #A8A5A7;
 }
+#intro2 img{
+	width: 32px;
+	position: relative;
+	top: 8px;
+}
 #close {
   color: rgb(24,180,117);
   float: right;
